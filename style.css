@@ -1,0 +1,463 @@
+@font-face {
+  font-family: 'Montserrat-Bold';
+  src: url('/fonts/Montserrat/Montserrat-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Montserrat-Medium';
+  src: url('/fonts/Montserrat/Montserrat-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'Montserrat-Thin';
+  src: url('/fonts/Montserrat/Montserrat-Thin.ttf');
+}
+
+body {
+  height: 100vh;
+  background-color: #f8f6f6;
+  margin: 0;
+  font-family: 'Montserrat-Medium', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #343136;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  margin-top: 60px;
+  gap: 16px;
+}
+
+.logo-image {
+  width: 100%;
+}
+
+.logo-name {
+  font-family:'Montserrat-Bold', sans-serif;
+  font-size: 50px;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  background-color: #ffffff;
+  width: 406px;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: flex-start;
+  margin: auto;
+  border-radius: 5%;
+  margin-top: 145px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+
+.form-name {
+  margin: 0;
+  font-family: 'Montserrat-Medium', sans-serif;
+  font-size: 36px;
+}
+
+.authorization {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-wrapper {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  margin-top: 40px;
+}
+
+.input {
+  padding: 0;
+}
+
+.login-input,
+.password-input {
+  width: 350px;
+  height: 59px;
+  box-sizing: border-box;
+  border-radius: 15px;
+  border: #d9d9d9 solid 0.5px;
+  padding: 20px;
+}
+
+.password-label {
+  position: relative;
+}
+
+.password-label::before {
+  position: absolute;
+  content: "";
+  background: url('/pictures/eyes.svg') no-repeat;
+  width: 24px;
+  height: 24px;
+  top: 18px;
+  right: 12px;
+  cursor: pointer;
+}
+
+.login-input:focus,
+.password-input:focus {
+  outline: 2px solid #ff7a00;
+  color: #000000;
+  font-family: 'Montserrat-Medium', sans-serif;
+}
+
+input::placeholder {
+  opacity: 0.4;
+  font-family: 'Montserrat-Medium', sans-serif;
+  font-size: 16px;
+  color: #d9d9d9;
+}
+
+.password-label {
+  margin-top: 16px;
+}
+
+.passwords-wrapper {
+  display: flex;
+  margin-top: 6px;
+  font-family: 'Montserrat-Medium', sans-serif;
+  font-size: 12px;
+  color: #343136;
+  align-items: center;
+}
+
+.reset-password {
+  margin-left: auto;
+}
+
+.enter-input {
+  display: flex;
+  width: 350px;
+  height: 62px;
+  border-radius: 15px;
+  border: none;
+  margin-top: 40px;
+  justify-content: center;
+  font-family: 'Montserrat-Medium', sans-serif;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.register {
+  font-family: 'Montserrat-Medium', sans-serif;
+  position: relative;
+  display: flex;
+  margin-top: 40px;
+  justify-content: center;
+}
+
+.register::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 175px;
+  height: 1px;
+  border-bottom: 1px solid black;
+  top: 20px;
+}
+
+.checkbox-label {
+  padding-left: 5px;
+}
+
+/* стили для index.html */
+
+.header-container {
+  box-sizing: border-box;
+  padding-top: 57px;
+  padding-left: 52px;
+  padding-right: 52px;
+  border-right: 2px solid #ced2d7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 39px;
+}
+
+.nav-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.nav-item {
+  display: flex;
+  width: 196px;
+  height: 62px;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  padding-left: 50px;
+  max-width: 150px;
+}
+
+.nav-item:nth-child(1) {
+  background-color: #ff7a00;
+  border-radius: 15px;
+  color: #ffffff;
+  background-image: url('/pictures/main.svg');
+  background-repeat: no-repeat;
+  background-position: left 20px center;
+}
+
+.nav-item:nth-child(1) a {
+  color: #ffffff;
+}
+
+.nav-item:nth-child(2) {
+  background-image: url('/pictures/devices.svg');
+  background-repeat: no-repeat;
+  background-position: left 20px center;
+}
+
+.nav-item:nth-child(3) {
+  background-image: url('/pictures/activation.svg');
+  background-repeat: no-repeat;
+  background-position: left 20px center;
+}
+
+.nav-item:nth-child(4) {
+  background-image: url('/pictures/documentation.svg');
+  background-repeat: no-repeat;
+  background-position: left 20px center;
+}
+
+.nav-item:nth-child(5) {
+  background-image: url('/pictures/user.svg');
+  background-repeat: no-repeat;
+  background-position: left 20px center;
+}
+
+.nav-item:nth-child(6) {
+  background-image: url('/pictures/cart.svg');
+  background-repeat: no-repeat;
+  background-position: left 20px center;
+}
+
+.nav-item:nth-child(7) {
+  background-image: url('/pictures/help.svg');
+  background-repeat: no-repeat;
+  background-position: left 20px center;
+}
+
+.nav-item:nth-child(8) {
+  background-image: url('/pictures/settings.svg');
+  background-repeat: no-repeat;
+  background-position: left 20px center;
+}
+
+.nav-item:nth-child(9) {
+  position: relative;
+  margin-top: 65px;
+  background-image: url('/pictures/logout.svg');
+  background-repeat: no-repeat;
+  background-position: left 20px center;
+}
+
+.nav-item:nth-child(9)::before {
+  position: absolute;
+  content: "";
+  width: 196px;
+  height: 2px;
+  top: -35px;
+  left: 0;
+  background-color: #ced2d7;
+}
+
+.index-container {
+  height: 100vh;
+  display: flex;
+}
+.index-logo {
+  display: flex;
+  align-items: center;
+}
+
+.index-logo {
+  width: 130px;
+}
+
+.index-logo-name {
+  font-size: 30px;
+  font-family: 'Montserrat-Bold', sans-serif;
+}
+
+.main-container {
+  display: flex;
+  margin-top: 40px;
+  flex-wrap: wrap;
+  padding: 40px 50px 44px;
+  height: fit-content;
+  gap: 30px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  grid-row-gap: 50px; 
+  grid-column-gap: 10px;
+  margin-top: 65px;
+  font-family: 'Montserrat-Thin', sans-serif;
+  justify-content: center;
+  align-items: center;
+  max-width: 439px;
+}
+
+.grid-name {
+  position: relative;
+}
+
+.grid-name::before {
+  position: absolute;
+  content: "";
+  width: 441px;
+  height: 51px;
+  box-sizing: border-box;
+  top: -14px;
+  left: -20px;
+  border: 2px solid #dfdfdf;
+  border-radius: 10px;
+  opacity: 0.3;
+}
+
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-row-gap: 98px; 
+  grid-column-gap: 83px;
+  margin-top: 45px;
+  font-family: 'Montserrat-Thin',sans-serif;
+  align-items: center;
+}
+
+.header {
+  font-weight: bold;
+}
+
+.products-description {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  max-width: 945px;
+  height: fit-content;
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 38px 50px 91px;
+  font-family: 'Montserrat',sans-serif;
+}
+
+.product-name:first-of-type {
+  margin-top: 50px;
+}
+
+.product-name {
+  margin-top: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.description {
+  margin-top: 10px;
+  font-family: 'Montserrat-Thin', sans-serif;
+}
+
+.firmware-description {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Montserrat', sans-serif;
+  padding: 38px 50px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  width: 439px;
+}
+
+.description-title {
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.description-title__firm {
+  position: relative;
+}
+
+.description-title__firm::before {
+  position: absolute;
+  content: "";
+  width: 439px;
+  height: 2px;
+  background-color: #dfdfdf;
+  top: 50px;
+  left: 0;
+}
+
+.description-title::before {
+  position: absolute;
+  content: "";
+  width: 839px;
+  height: 2px;
+  background-color: #dfdfdf;
+  top: 50px;
+  left: 0;
+}
+
+.products-list {
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 38px 50px;
+  max-width: 945px;
+  min-height: 555px;
+}
+
+.product-number {
+  position: relative;
+}
+
+.product-number::before {
+  position: absolute;
+  content: "";
+  width: 860px;
+  height: 110px;
+  box-sizing: border-box;
+  top: -50px;
+  left: -20px;
+  border: 2px solid #dfdfdf;
+  border-radius: 10px;
+  opacity: 0.3;
+}
+
+.product-title {
+  position: relative;
+}
+
+.product-title::before {
+  position: absolute;
+  content: "";
+  background: url('/pictures/product.png') no-repeat;
+  width: 100px;
+  height: 73px;
+  top: -20px;
+  left: -125px;
+}
+
+
+
